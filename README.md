@@ -2,7 +2,8 @@
 Monitors a specified executable and tracks all child processes it spawns in real time. Captures process metadata including name, ID, command line, path, and SHA256 hash. Uses WMI events and polling for instant detection. Displays live status updates and final results when the parent process exits.
 
 ProcessSentinel.ps1
- Overview
+
+**Overview**
 ProcessSentinel.ps1 is a real-time process monitoring script built in PowerShell. It launches a specified executable or script and continuously tracks all child processes it spawns. Using WMI event subscriptions and polling, it instantly detects new processes, logs detailed metadata, and displays live status updates until the parent process exits.
 
 **Features**
