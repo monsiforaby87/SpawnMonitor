@@ -26,7 +26,7 @@ Administrator privileges (recommended for full WMI access)
 **Usage**
 Open PowerShell as Administrator.
 
-Run the script:
+**Run the script:**
 
 powershell
 .\ProcessSentinel.ps1
