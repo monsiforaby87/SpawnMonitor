@@ -1,0 +1,22 @@
+# Sysmon Process and Network Tracker
+
+This PowerShell script monitors a specific executable and its child processes for network activity and DNS queries using Sysmon logs. It provides real-time visibility into process creation, network connections, and DNS resolution attempts, and exports final reports to CSV.
+
+## 🚀 Features
+
+- Tracks process creation (Sysmon Event ID 1)
+- Monitors network connections (Sysmon Event ID 3)
+- Captures DNS queries (Sysmon Event ID 22)
+- Detects failed connections based on DNS queries without matching network events
+- Displays live updates in the console
+- Exports final logs to CSV files
+
+## 🧰 Prerequisites
+
+### 1. Sysmon Installation
+
+Ensure Sysmon is installed and configured:
+- Download Sysmon from [Microsoft Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+- Install with:
+  ```bash
+  sysmon -accepteula -i sysmonconfig.xml
